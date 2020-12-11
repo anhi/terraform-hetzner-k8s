@@ -36,7 +36,7 @@ deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) sta
 deb http://packages.cloud.google.com/apt/ kubernetes-xenial main
 EOF
 apt-get -qq update
-apt-get -qq install -y docker-ce kubeadm=1.18.0-00 kubectl=1.18.0-00 kubelet=1.18.0-00
+apt-get -qq install -y docker-ce kubeadm=1.19.0-00 kubectl=1.19.0-00 kubelet=1.19.0-00
 
 # Allow traffic between nodes and pods
 cat <<EOF >>/etc/sysctl.conf

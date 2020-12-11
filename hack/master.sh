@@ -12,7 +12,7 @@ IP_ADR=`ifconfig ens10 | grep -w "inet" | tr -s " " | cut -f3 -d" "`
 
 kubeadm init \
   --pod-network-cidr=10.244.0.0/16 \
-  --kubernetes-version=v1.18.0 \
+  --kubernetes-version=v1.19.0 \
   --ignore-preflight-errors=NumCPU \
   --apiserver-cert-extra-sans $IP_ADR
 
