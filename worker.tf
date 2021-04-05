@@ -1,7 +1,7 @@
 resource "hcloud_server" "worker" {
   name = "worker-${count.index}"
   image = "ubuntu-18.04"
-  server_type = var.worker_server_type
+  server_type = var.worker_server_type[count.index]
   location = "nbg1"
   ssh_keys = local.ssh_keys
 

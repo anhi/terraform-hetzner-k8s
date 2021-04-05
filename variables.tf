@@ -31,8 +31,8 @@ variable "worker_cnt" {
 }
 
 variable "worker_server_type" {
-  type = string
-  default = "cx21"
+  type = list(string)
+  default = ["cx21"]
 }
 
 variable "worker_additional_setup_script" {
